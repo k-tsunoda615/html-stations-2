@@ -9,8 +9,49 @@
   <body>
     <main>
       <form action="" method="post">
+        <div>
+          <label for="email">メールアドレス</label>
+          <input 
+            type="email" 
+            id="email" 
+            required
+          >
+        </div>
+
+        <div>
+          <label for="password">パスワード</label>
+          <input 
+            type="password" 
+            id="password" 
+            minlength="6" 
+            required
+          >
+        </div>
+
+        <div>
+          <label for="nickname">ニックネーム</label>
+          <input 
+            type="text" 
+            id="nickname" 
+            maxlength="20"
+          >
+        </div>
+
         <button type="submit">送信</button>
       </form>
     </main>
   </body>
 </html>
+
+
+<!-- 
+- フロントエンドでのバリデーションは、主にユーザー体験の向上を目的である
+- サーバサイドでのバリデーションは、システムとデータの保護が主な目的である
+- 悪意のあるユーザーがフロントエンドのバリデーションを回避し、直接サーバにデータを送信する可能性があるため、サーバー側でも入力値を厳密にチェックしている
+
+htmlとjavascriptのバリデーションの違い
+- htmlのバリデーションは、ユーザーによる入力の検証を行う
+- javascriptのバリデーションは、サーバーとの通信を行う前にデータの検証を行う
+- HTML5バリデーションは第一の防御線として機能し、JavaScriptが無効化された場合のフォールバックとなる
+
+-->
