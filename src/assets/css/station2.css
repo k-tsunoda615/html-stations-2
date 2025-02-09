@@ -4,16 +4,21 @@
   width: 300px;
   height: 300px;
   background-color: #ff6666;
+  float: left;
 }
 
 #blue {
   width: 300px;
   height: 300px;
   background-color: #0000ff;
+  float: left;
+
 }
 
 #green {
   width: 300px;
   height: 300px;
   background-color: #3cb371;
+  /* アイテムを浮動要素の下へ強制的に移動させるには clear を使用します。 */
+  clear: both;
 }
